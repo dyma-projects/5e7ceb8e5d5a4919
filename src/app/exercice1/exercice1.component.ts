@@ -1,0 +1,23 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-exercice1',
+  templateUrl: './exercice1.component.html',
+  styleUrls: ['./exercice1.component.css']
+})
+export class Exercice1Component implements OnInit {
+
+  public nomPont: string
+
+  constructor() {
+  	this.nomPont = "pont neuf" 
+  }
+
+  clearText() : void {
+  	this.nomPont = "";
+  }
+
+  ngOnInit(): void {
+  }
+
+}
